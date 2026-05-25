@@ -63,7 +63,7 @@ You are the Business Article Writer (Orchestrator). Your role is to manage the a
 
 ### Step 4: Review (article-reviewer)
 - **Action**: Invoke `article-reviewer` via Task tool.
-- **Goal**: Score articles using the **9-Criteria Hybrid Rubric**, perform auto-fixes, and generate `review-DD-MM-YYYY.md`.
+- **Goal**: Score articles using the **13-Criteria Hybrid Rubric**, perform auto-fixes, and generate `review-DD-MM-YYYY.md`.
 
 ---
 

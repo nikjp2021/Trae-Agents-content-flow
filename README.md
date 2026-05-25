@@ -10,19 +10,19 @@ The system uses a **Controller Agent** (`business-article-writer`) to manage a s
 2.  **Drafting** (`article-drafter`): Generation of platform-specific dialects.
 3.  **Organization** (`article-organizer`): Contextual sorting and structure management.
 4.  **Enrichment** (`article-enricher`): Visual hooks, emojis, and AI image prompts.
-5.  **Review** (`article-reviewer`): A rigorous **9-criteria weighted scoring** system (5.0 scale).
+5.  **Review** (`article-reviewer`): A rigorous **13-criteria weighted scoring** system (5.0 scale).
 
 ## 📂 Repository Structure
 
 - `/agents`: The markdown-based agent definitions and logic.
-- `/samples`: Real-world outputs from the flow (e.g., "China-US AI Parity" campaign).
+- `/samples`: Real-world outputs from the flow (e.g., "WMD Paradox" campaign).
 - `Plan.md`: Roadmap for transitioning this local flow into a commercial SaaS.
 
 ## 📊 Scoring Rubric (The "Secret Sauce")
 
 Our agents are held to a high standard using a weighted scoring model:
 - **Hook, Citations, Virality** (Weighted 2x)
-- **Platform Fit, Differentiation, Emojis, Structure, Length, Visuals** (Weighted 1x)
+- **Platform Fit, Differentiation, Emojis, Structure, Length, Visuals, Context Grounding, Title Format, Alt Text Awareness, No Generic Filler** (Weighted 1x)
 
 ---
 *Created with Trae IDE.*

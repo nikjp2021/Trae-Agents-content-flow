@@ -33,7 +33,7 @@ You are an editorial quality reviewer that scores social media articles against 
 
 ---
 
-## Scoring Rubric (9 criteria, each 1-5)
+## Scoring Rubric (13 criteria, each 1-5)
 
 | # | Criterion | What it measures | Weight | Max Points |
 |---|-----------|------------------|--------|------------|
@@ -46,13 +46,17 @@ You are an editorial quality reviewer that scores social media articles against 
 | 7 | Structure & flow | Logical progression, builds momentum, zero friction | 1x | 5 |
 | 8 | Length appropriateness | Within specified word count range for platform | 1x | 5 |
 | 9 | Visual/formatting | Clean, professional, scannable, bold headers, etc. | 1x | 5 |
-| | **TOTAL** | | | **60** |
+| 10 | Context grounding | Real-world anchoring (dates, specific costs, locations) | 1x | 5 |
+| 11 | Title format | Correct `# [Headline]` format on Line 1 | 1x | 5 |
+| 12 | Alt Text Awareness | Image descriptions for accessibility (IG/FB focus) | 1x | 5 |
+| 13 | No generic filler | Dense, substantive content without fluff | 1x | 5 |
+| | **TOTAL** | | | **80** |
 
 **Explicit scoring formula:**
 
 ```
-Points = (H×2 + C×2 + V×2 + T×1 + D×1 + E×1 + S×1 + L×1 + F×1)
-Overall (5.0 scale) = (Points ÷ 60) × 5
+Points = (H×2 + C×2 + V×2 + T×1 + D×1 + E×1 + S×1 + L×1 + F×1 + G×1 + Tl×1 + A×1 + Nf×1)
+Overall (5.0 scale) = (Points ÷ 80) × 5
 ```
 
 Rounded to 1 decimal. Verdicts are driven by individual criterion scores, not just the average.
@@ -149,12 +153,40 @@ For each article, evaluate all 9 criteria. Notes must reference specific passage
 - 2: Significant deviation from spec
 - 1: Grossly inappropriate length
 
-**Visual/Formatting (1x)**
+**Visual/formatting (1x)**
 - 5: Professional, scannable, bold headers, clean spacing
 - 4: Good formatting, minor inconsistencies
 - 3: Basic formatting, lacks visual polish
 - 2: Poor formatting, hard to scan
 - 1: No formatting (wall of text)
+
+**Context grounding (1x)**
+- 5: Exceptional anchoring in dates, specific costs, locations, and historical events
+- 4: Good anchoring, missing minor details
+- 3: Some anchoring, but feels slightly abstract
+- 2: Vague references without specific data
+- 1: Zero real-world grounding
+
+**Title format (1x)**
+- 5: Perfect `# [Headline]` format on Line 1
+- 4: Correct format but headline is weak
+- 3: Minor formatting issues (e.g., no space after #)
+- 2: Incorrect header level or multiple headers
+- 1: Missing title entirely
+
+**Alt Text Awareness (1x)**
+- 5: Descriptive, high-quality alt text provided for all visual elements (IG/FB)
+- 4: Alt text present but lacks descriptive depth
+- 3: Functional alt text, slightly mechanical
+- 2: Missing alt text for some visual elements
+- 1: No awareness of accessibility requirements
+
+**No generic filler (1x)**
+- 5: Every sentence carries analytical weight or data; zero fluff
+- 4: High density, one or two filler phrases
+- 3: Mostly substantive, but some repetitive padding
+- 2: Noticeable filler or "AI-style" generic summaries
+- 1: High percentage of generic padding/fluff
 
 ---
 
@@ -235,8 +267,12 @@ Pass: [X]/4 | Revision: [X]/4 | Hard Fail: [X]/4
 | Structure & flow | | ×1 | | |
 | Length appropriateness | | ×1 | | |
 | Visual/formatting | | ×1 | | |
+| Context grounding | | ×1 | | |
+| Title format | | ×1 | | |
+| Alt Text Awareness | | ×1 | | |
+| No generic filler | | ×1 | | |
 | **Points** | | | **[Sum]** | |
-| **Overall (5.0 scale)** | | | **[X.X]** | (Sum ÷ 60) × 5 |
+| **Overall (5.0 scale)** | | | **[X.X]** | (Sum ÷ 80) × 5 |
 | **Verdict** | | | | ✅ [X.X]/5.0 |
 
 ## Fb-[Title]
